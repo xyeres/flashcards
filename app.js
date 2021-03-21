@@ -3,8 +3,10 @@ const express = require("express");
 
 const app = express();
 
+app.set('view engine', 'pug');
+
 app.get('/', (req, res) => {
-    res.send('<h2>Hi there, developer!!</h2>');
+    res.render('index')
 });
 
 
