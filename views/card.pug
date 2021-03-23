@@ -4,4 +4,7 @@ block content
         h2= text
         if hint 
             p 
-                i=hint
+                i Hint: #{hint}
+        a(href=`${id}?side=${sideToShow}`)= sideToShowDisplay
+        br
+        a(href="/cards")
